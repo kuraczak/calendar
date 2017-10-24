@@ -19,13 +19,13 @@ public:
 	friend std::ostream & operator<<(std::ostream &, const Date &);
 	bool operator ==(const Date &) const;
 	bool operator !=(const Date &) const;
-	Date operator+(int) const;
-	Date operator-(int) const;
-	Date operator+(const Date &) const;
-	Date operator-(const Date &) const;
-	Date &operator+=(const Date &);
-	Date &operator-=(const Date &);
-	Date &operator=(const Date &);
+	Date operator+(int);
+	Date operator-(int);
+	Date operator+( Date &);
+	Date operator-( Date &);
+	void operator+=( Date &);
+	void operator-=( Date &);
+	Date operator=( Date &);
 
 	int dateToInt();
 	friend Date intToDate(int);

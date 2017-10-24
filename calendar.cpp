@@ -32,32 +32,7 @@ bool Date::operator!=(const Date& d)const{
 	return !(this->operator==(d));
 }
 
-Date Date::operator +(int numberOfDays )const{
 
-	int temp_year=year;
-	int temp_month=month;
-	int temp_day=day;
-
-
-	for(int i=0;i<numberOfDays;i++){
-		if(temp_day<numOfDays[temp_month])
-			temp_day++;
-		else if(temp_month<12){
-			temp_day=1;
-			temp_month++;
-		}else{
-			temp_year++;
-			temp_month=1;
-			temp_day=1;
-		}
-	}
-
-	Date nDate=Date(temp_day,temp_month, temp_year);
-	return nDate;
-
-
-
-}
 
 std::ostream & operator<<(std::ostream& out, const Date & data){
 
@@ -116,5 +91,45 @@ Date intToDate(int numberOfDays){
 	return d;
 
 }
+
+Date Date::operator +(int numberOfDays ){ //zaytać o consty
+
+	return intToDate(  dateToInt()+numberOfDays );
+
+}
+
+Date Date::operator -(int numberOfDays ){ //zaytać o consty
+
+	return intToDate(  dateToInt()-numberOfDays );
+
+}
+
+Date Date::operator+( Date & d){
+	return intToDate(dateToInt()+d.dateToInt());
+}
+
+Date Date::operator-( Date & d){
+	return intToDate(dateToInt()-d.dateToInt());
+}
+
+void Date::operator+=( Date & d){
+	 Date n = intToDate(dateToInt()+d.dateToInt());
+	 year=n.year;
+	 month=n.month;
+	 day=n.day;
+}
+
+void Date::operator-=( Date & d){
+	 Date n = intToDate(dateToInt()-d.dateToInt());
+	 year=n.year;
+	 month=n.month;
+	 day=n.day;
+}
+
+Date Date::operator=( Date & d){
+	 Date n(d.day,d.month,d.year);
+	 return n;
+}
+
 
 

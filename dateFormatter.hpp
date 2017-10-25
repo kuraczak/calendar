@@ -13,7 +13,7 @@
 class DateFormatter {
 
 public:
-	virtual std::string format(const Date &data)=0;
+	virtual std::string format( Date &data)=0;
 	virtual ~DateFormatter()=0;
 
 
@@ -21,11 +21,13 @@ public:
 };
 
 class ComputerDateFormatter: public DateFormatter {
-
+public:
+	std::string format( Date &data);
 };
 
 class GermanDateFormatter: public DateFormatter {
-
+public:
+	std::string format( Date &data);
 };
 
 #endif /* DATEFORMATTER_HPP_ */

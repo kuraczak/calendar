@@ -40,7 +40,7 @@ std::ostream & operator<<(std::ostream& out, const Date & data){
 	return out;
 }
 
-int Date::dateToInt(){
+int Date::dateToInt()const{
 
 	int numberOfDays=0;
 
@@ -92,7 +92,7 @@ Date intToDate(int numberOfDays){
 
 }
 
-Date Date::operator +(int numberOfDays ){ //zaytać o consty
+Date Date::operator +(int numberOfDays )const{ //zaytać o consty
 
 	return intToDate(  dateToInt()+numberOfDays );
 

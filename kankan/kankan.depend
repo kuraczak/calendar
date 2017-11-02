@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1509644030 source:c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\main.cpp
+	<iostream>
+	"calendar.hpp"
+	"dateFormatter.hpp"
+
+1509643591 source:c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\calendar.cpp
+	"calendar.hpp"
+
+1509644031 c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\calendar.hpp
+	<iostream>
+
+1509644229 c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\dateformatter.hpp
+	<string>
+	<iomanip>
+	"calendar.hpp"
+
+1509644627 source:c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\computerdateformatter.cpp
+	"dateFormatter.hpp"
+
+1509644641 source:c:\users\domininia\desktop\wyk³ad\kalendarz\kankan\dateformatter.cpp
+	"dateFormatter.hpp"
+

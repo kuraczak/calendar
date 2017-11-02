@@ -19,6 +19,7 @@ int main(){
 	int datai=data1.dateToInt();
 
 	std::cout<<intToDate(datai);
+	std::cout<<"Szymon : Eclipse \n 1:0 ";
 
 
 

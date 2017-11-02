@@ -24,4 +24,11 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.managedBuildNature</nature>
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>calendar.cpp</name>
+			<type>1</type>
+			<location>/home/kuraczak/grive/sync/I/workspacecpp/calendar/calendar.cpp</location>
+		</link>
+	</linkedResources>
 </projectDescription>

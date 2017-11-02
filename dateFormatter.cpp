@@ -15,8 +15,26 @@
 
 
 
-	 return temp
- }
+	 return temp;
+
+ };
+
+DateFormatter::~DateFormatter(){
+
+}
+
+
+ std::string ComputerDateFormatter::format( Date &data){
+
+
+ 	 std::string temp;
+
+
+
+
+ 	 return temp;
+
+  }
 
 
 

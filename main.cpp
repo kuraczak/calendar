@@ -6,23 +6,20 @@
  */
 #include <iostream>
 #include "calendar.hpp"
-#include "dateFormatter.hpp"
 
-int main(){
+int main() {
 
-	Date data1(29,2,1900);
+	Date data1(29, 2, 1900);
 
+	std::cout << data1;
 
+	int datai = data1.dateToInt();
 
-	std::cout<<data1;
-
-	int datai=data1.dateToInt();
-
-	std::cout<<intToDate(datai);
-	std::cout<<"Szymon : Eclipse \n 1:0 ";
-
-
+	std::cout << intToDate(datai);
+	GermanDateFormatter gdf;
+	ComputerDateFormatter cdf;
+	std::cout << gdf.format(data1);
+	std::cout << cdf.format(data1);
 
 }
-
 
